@@ -1,9 +1,9 @@
 import { render, screen } from '@/test-utils';
-import { Welcome } from './Welcome';
+import { ArticleCard } from './ArticleCard';
 
 describe('Welcome component', () => {
   it('has correct Next.js theming section link', () => {
-    render(<Welcome />);
+    render(<ArticleCard title="this is a test" category="test" image="test" author="test" />);
     expect(screen.getByText('this guide')).toHaveAttribute(
       'href',
       'https://mantine.dev/guides/next/'
